@@ -1,9 +1,14 @@
+//const
+
 const Discord = reuire('discord.js);
 const client = new Discord.client;
-                       
+       
+     // console log if the bot is on                  
 client.on('ready', () => {
  console.log(`Logged in as ${client.user.tag}!`);
 });
+
+// servver commands not ready 
 client.on('message", msg=> {
   if (messag.content === '!server') {
   const embed = new MessageEmbed()

@@ -9,12 +9,15 @@ client.on('message", msg=> {
   const embed = new MessageEmbed()
   .setTitle('')
 
-
+// ping commands
+  
 client.on('message', message => {
   if (message.content === '!ping') {
     message.channel.send('pong');
   }
 });
+  
+  // avatar command
 
 client.on('message', message => {
   if (message.content === '!avatar') {
